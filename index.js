@@ -263,8 +263,9 @@ function toggleNightMode(button) {
 
 function toggleReadMode(button) {
     button.classList.toggle('selected');
-    document.getElementById('out').classList.toggle('focused');
     document.getElementById('in').classList.toggle('hidden');
+    document.getElementById('out').classList.toggle('hidden');
+    //document.getElementById('out').classList.toggle('focused');
 }
 
 function toggleSpellCheck(button) {
